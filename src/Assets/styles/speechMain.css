@@ -1,0 +1,95 @@
+.App {
+  display: grid;
+  max-width: 58rem;
+  height: 100%;
+  padding: 2rem;
+}
+.title {
+  justify-self: center;
+}
+.speech-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  grid-gap: 1rem;
+  max-width: 40rem;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f0f0f0;
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 10px 13px -7px rgba(204, 204, 204, 0.5),
+    5px 5px 13px 4px rgba(204, 204, 204, 0);
+  box-shadow: 0px 10px 13px -9px rgba(204, 204, 204, 0.5),
+    5px 5px 13px 4px rgba(204, 204, 204, 0);
+}
+
+.text {
+  text-align: justify;
+  background-color: transparent;
+  border: none;
+  color: #f0f0f0;
+  overflow-wrap: break-word;
+  font-size: 1.5rem;
+  padding: 0 3rem;
+  height: auto;
+}
+.text:focus {
+  border: none;
+  outline: none;
+}
+
+#mic {
+  font-size: 2rem;
+  cursor: pointer;
+  justify-self: center;
+  align-self: center;
+}
+#mic:hover {
+  color: rgb(252, 191, 191);
+}
+.copy-container {
+  position: absolute;
+  right: 10%;
+  top: 17%;
+}
+#copy {
+  font-size: 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 0.7rem;
+  font-size: 0.9rem;
+  visibility: hidden;
+  background-color: rgba(252, 191, 191, 0.5);
+  color: #f0f0f0;
+  border-radius: 0.6rem;
+  top: 140%;
+  left: 5px;
+}
+.far.fa-copy:hover > .tooltip {
+  visibility: visible;
+  cursor: help;
+  z-index: 15;
+}
+
+@media (max-width: 600px) {
+  .speech-wrapper {
+    position: relative;
+    grid-template-columns: auto;
+  }
+  #mic {
+    position: relative;
+    background-color: rgb(22, 22, 94);
+    padding: 0.5rem 9rem;
+  }
+  #mic:hover {
+    background-color: rgb(11, 11, 85);
+  }
+  .text {
+    padding: 0;
+  }
+}
