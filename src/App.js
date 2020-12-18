@@ -45,7 +45,7 @@ const App = () => {
     fetch('/request', {
       method: 'POST',
       body: {
-        content: true
+        "content": "true"
       },
       headers: {
         "Content-type": "application/json"
@@ -101,7 +101,6 @@ const [play] = useSound(Chime);
           id="mic"
           onMouseDown={play}
           onClick={HandleSpeech}
-          on
           className="fas fa-microphone-alt"
         ></i>
 

@@ -40,6 +40,8 @@
   },
   "proxy": "http://localhost:5000",
   "functions":{
-      "excludeFiles": "public/**"
+    "api/.venv/lib": {
+      "excludeFiles": "lib/**"
+    }
   }
 }
