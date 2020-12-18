@@ -40,8 +40,8 @@
   },
   "proxy": "http://localhost:5000",
   "functions":{
-    "public/": {
-      "excludeFiles": "public/"
+    "public/**": {
+      "excludeFiles": "public/**"
     }
   }
 }
