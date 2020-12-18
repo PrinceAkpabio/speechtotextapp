@@ -99,8 +99,10 @@ const [play] = useSound(Chime);
         />
         <i
           id="mic"
-          onClick={play}
-          onMouseDown={HandleSpeech} className="fas fa-microphone-alt"
+          onMouseDown={play}
+          onClick={HandleSpeech}
+          on
+          className="fas fa-microphone-alt"
         ></i>
 
       </div>
