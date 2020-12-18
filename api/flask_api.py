@@ -30,11 +30,8 @@ def SpeechReg():
                         print(text)
                         if isinstance(text, str):
                             break
-                    except sr.UnknownValueError:
-                        print("Oops! Didn't catch that")
-                    except sr.RequestError as e:
-                        print(
-                            "Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
+                    except Exception as err:
+                        print('There was an error in speech conversion :', err)
             except KeyboardInterrupt:
                 pass
 
