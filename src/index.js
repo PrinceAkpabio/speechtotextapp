@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './Assets/styles/speechMain.css'
-import './index.css'
+import '../src/Assets/styles/base.scss';
 
 ReactDOM.render(
   <React.StrictMode>

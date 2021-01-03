@@ -1,0 +1,30 @@
+@import "./_app";
+@import "./_speech";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+body {
+  background-color: rgb(7, 7, 65);
+  height: auto;
+  width: 100%;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  // padding: 0 2rem;
+}
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.row {
+  margin: 4em 20px;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
