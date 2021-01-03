@@ -4,7 +4,7 @@ gunicorn==20.0.4
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
-PyAudio @ file:///C:/Users/user/Documents/My%20Projects/speechtotextapp/speechtotext_app/api/PyAudio-0.2.11-cp38-cp38-win_amd64.whl
+PyAudio @ file:///C:/Users/user/Documents/My%20Projects/speechtotextapp/speechtotext_app/third-party/PyAudio-0.2.11-cp38-cp38-win_amd64.whl
 python-dotenv==0.15.0
 SpeechRecognition==3.8.1
 Werkzeug==1.0.1
