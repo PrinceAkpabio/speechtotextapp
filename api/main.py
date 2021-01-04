@@ -11,6 +11,10 @@ def Index():
 def Favicon():
     return app.send_static_file('favicon.ico')
 
+@app.errorhandler(404)
+def not_found(e):
+    return app.send_static_file('index.html')
+
 # ======================= Post Method =========================================================================
 
 @app.route('/request', methods=["POST"])
