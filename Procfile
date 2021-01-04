@@ -1,2 +1,1 @@
-portaudio19-dev
-python-all-dev
+web: gunicorn main:app
