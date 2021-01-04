@@ -3,11 +3,11 @@ import speech_recognition as sr
 
 app = Flask(__name__, static_folder='./build', static_url_path='/')
 
-@app.route('/')
+@app.route('/', methods=["GET"])
 def Index():
     return app.send_static_file('index.html')
 
-@app.route('/favicon.ico')
+@app.route('/favicon.ico', methods=["GET"])
 def Favicon():
     return app.send_static_file('favicon.ico')
 
