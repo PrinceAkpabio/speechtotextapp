@@ -1,7 +1,7 @@
 from flask import Flask, request
 import speech_recognition as sr
 
-app = Flask(__name__, static_folder='./build', static_url_path='/')
+app = Flask(__name__, static_folder='../build', static_url_path='/')
 
 @app.route('/', methods=["GET"])
 def Index():
