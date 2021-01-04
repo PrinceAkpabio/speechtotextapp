@@ -1,19 +1,19 @@
 from flask import Flask, request
 import speech_recognition as sr
 
-app = Flask(__name__)
-# app = Flask(__name__, static_folder='../build', static_url_path='/')
+# app = Flask(__name__)
+app = Flask(__name__, static_folder='./build', static_url_path='/')
 
-@app.route('/')
-def index():
-    return "<h1>Welcome to our server !!</h1>"
-# @app.route('/', methods=["GET"])
-# def Index():
-#     return app.send_static_file('index.html')
+# @app.route('/')
+# def index():
+#     return "<h1>Welcome to our server !!</h1>"
+@app.route('/', methods=["GET"])
+def Index():
+    return app.send_static_file('index.html')
 
-# @app.route('/favicon.ico', methods=["GET"])
-# def Favicon():
-#     return app.send_static_file('favicon.ico')
+@app.route('/favicon.ico', methods=["GET"])
+def Favicon():
+    return app.send_static_file('favicon.ico')
 
 # @app.errorhandler(404)
 # def not_found(e):
